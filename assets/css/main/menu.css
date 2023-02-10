@@ -1,0 +1,79 @@
+.menu__container {
+    min-width: 100vw;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+
+    padding: 0 calc((100vw / 2) - (var(--container) / 2));
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.nav-btn {
+    border-radius: 50px;
+    padding: 8px 14px 8px 46px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 14px center;
+}
+.nav-btn.active {
+    pointer-events: none;
+    background-color: var(--main-color);
+}
+.nav-btn.active:focus {
+    outline: none;
+}
+.nav-btn:hover,
+.nav-btn:focus-visible {
+    outline: 1px solid #F86310;
+    outline-offset: -1px;
+}
+
+@supports not selector(:focus-visible) {
+    .nav-btn:focus {
+        outline: 1px solid #F86310;
+        outline-offset: -1px;
+    }
+}
+
+.nav-btn__burger {
+    background-image: url(../../img/categories-icons/burger.svg);
+}
+.nav-btn__onion {
+    background-image: url(../../img/categories-icons/onion.svg);
+}
+.nav-btn__hotdog-sandwich {
+    background-image: url(../../img/categories-icons/hotdog-sandwich.svg);
+}
+.nav-btn__fast-food {
+    background-image: url(../../img/categories-icons/fast-food.svg);
+}
+.nav-btn__burrito {
+    background-image: url(../../img/categories-icons/burrito.svg);
+}
+.nav-btn__pizza {
+    background-image: url(../../img/categories-icons/pizza.svg);
+}
+.nav-btn__noodles {
+    background-image: url(../../img/categories-icons/noodles.svg);
+}
+.nav-btn__doughnut {
+    background-image: url(../../img/categories-icons/doughnut.svg);
+}
+.nav-btn__ketchup {
+    background-image: url(../../img/categories-icons/ketchup.svg);
+}
+
+@media (max-width: 320.98px) {
+    .menu__list {
+        gap: 5px;
+    }
+}

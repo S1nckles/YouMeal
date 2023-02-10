@@ -33,16 +33,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* --------------------------------------------------------- */
 
-:root {
-    --background: #F9F9F9;
-	--background-button: #F2F2F3; 
-	--text-color: #000000;
-	--main-color: #FFAB08;
-	--second-color: #FF7020;
-}
-
-/* --------------------------------------------------------- */
-
 body {
 	background-color: var(--background);
 	color: var(--text-color);

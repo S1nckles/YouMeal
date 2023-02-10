@@ -1,0 +1,106 @@
+@import 'veriables.css';
+
+.header {
+	background-image: url("data:image/svg+xml,%3Csvg width='320' height='459' viewBox='0 0 320 459' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='160.5' cy='153.5' r='305.5' fill='%23FFAB08'/%3E%3C/svg%3E%0A");;
+    background-size: 2880px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 63px;
+}
+.header__logo {
+	padding: 29px 0;
+	margin: 0 auto;
+}
+
+.header__content {
+	display: flex;
+    align-items: flex-start;
+    gap: 37px; 
+}
+
+.header-content__img {
+    display: inline-flex;
+    justify-content: flex-end;
+	flex: 0 1 42.7%;
+}
+.header__img {
+	padding-bottom: 9px;
+}
+
+.header-content__text {
+	flex: 0 1 57.2%;
+    margin-top: 21px;
+}
+
+.header__text {
+    font-family: 'Nunito';
+    font-style: normal;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+}
+
+.header-text__title {
+    max-width: 437px;
+
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+}
+.header-text__title span {
+    color: #FF5C00;
+}
+
+.header-text__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (max-width: 1023.98px) {
+    .header {
+        background-size: 2540px;
+    }
+    .header__img img {
+        max-width: 176px;
+        max-height: 203px;
+    }
+    .header-text__title {
+        font-size: 36px;
+    }
+    .header-text__subtitle {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767.98px) { 
+    .header {
+        background-size: 1050px;
+    }
+    .header__content {
+        flex-direction: column-reverse;
+        align-items: center;    
+    }
+    .header__text {
+        text-align: center;
+        max-width: 370px;
+        row-gap: 16px;
+    }
+    .header-content__img, .header-content__text{
+        flex: none;
+    }
+}
+@media (max-width: 424.98px) {
+    .header {
+        background-size: 611px;
+    }
+    .header-text__title {
+        font-size: 30px;
+    }
+}
