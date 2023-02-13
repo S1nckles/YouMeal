@@ -1,0 +1,145 @@
+.main__catalog {
+    margin-top: 122px;
+}
+
+.catalog__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.catalog__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+    position: absolute;
+    top: -75px;
+    left: 0;
+}
+
+.catalog__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.basket-catalog {
+    flex: 0 0 27%;
+}
+.basket {
+    max-height: 105px;
+    padding: 24px 16px;
+
+    color: var(--text-color);
+    background: #FFFFFF;
+    border-radius: 18px; 
+}
+.food__basket {
+}
+.basket__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basket__title h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+.basket__count {
+    padding: 2px 17px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    background-color: #F2F2F3;
+    border-radius: 6px;
+}
+.basket__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    padding-top: 16px;
+}
+
+.card-catalog {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.catalog__cards {
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.product-cards {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+}
+.catalog__card {
+    border-radius: 18px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+.card__img {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card__img img {
+    max-width: 276px;
+    max-height: 220px;
+}
+.card__text {
+    margin-top: 16px;
+}
+.card__cost {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+.card__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.card-btn {
+    margin-top: 29px;
+}
+.card__weight {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+
+    color: #B1B1B1;
+}
+.catalog__btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+    padding: 12px 101.5px;
+    border-radius: 12px;
+    background: #F2F2F3;
+
+    transition: background-color 0.3s ease-in-out;
+}
+.catalog__btn:hover {
+    background-color: #FFAB08;
+    color: #FFFFFF;
+}
+
+.card__text, .card-btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
