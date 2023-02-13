@@ -47,9 +47,13 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1088px;
-    padding: 0 32px;
+    max-width: calc(var(--container) + var(--container-padding) * 2);
+	padding: 0 var(--container-padding);
     margin: 0 auto;
+}
+
+main {
+	margin-bottom: 100px;
 }
 
 /* --------------------------------------------------------- */
